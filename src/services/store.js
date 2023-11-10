@@ -5,5 +5,5 @@ export const store = configureStore({
     reducer: {
         [articleApi.reducerPath]: articleApi.reducer,
     },
-    middleware: (GetDefaultMiddleware) => getDefaultMiddleware().concat(artcleApi.middleware)
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(articleApi.middleware)
 })
